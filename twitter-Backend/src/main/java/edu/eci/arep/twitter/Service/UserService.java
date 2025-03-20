@@ -11,30 +11,19 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public void createUser(String name, String email, String password, String username, String role){
-        userRepository.save(new User(name, email, password, username, role));
+    public User createUser(User user){
+        return userRepository.save(user);
     }
 
-    public User getUser(String username){
+    public User getUserByUsername(String username){
         return userRepository.findByUsername(username);
     }
 
-    public void updateUser(String username, String attributeToModify, String newValue){
-        User user = userRepository.findByUsername(username);
-        switch (attributeToModify){
-            case "name":
-                user.setName(newValue);
-                break;
-            case "email":
-                user.setEmail(newValue);
-                break;
-            case "password":
-                user.setPassword(newValue);
-                break;
-            case "role":
-                user.setRole(newValue);
-                break;
-        }
+    public void updateUser(User user){
         userRepository.save(user);
+    }
+
+    public void deleteUser(String username){
+        userRepository.deleteByUsername(username);
     }
 }
