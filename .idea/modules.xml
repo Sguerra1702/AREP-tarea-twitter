@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Tarea.iml" filepath="$PROJECT_DIR$/.idea/Tarea.iml" />
-      <module fileurl="file://$PROJECT_DIR$/twitter-Backend/twitter.iml" filepath="$PROJECT_DIR$/twitter-Backend/twitter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AREP-tarea-twitter.iml" filepath="$PROJECT_DIR$/.idea/AREP-tarea-twitter.iml" />
     </modules>
   </component>
 </project>

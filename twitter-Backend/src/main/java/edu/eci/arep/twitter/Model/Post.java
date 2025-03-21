@@ -7,18 +7,24 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Post {
     @Id
     private String id;
-    private String username;
+    private String name;      // Nombre completo del usuario
+    private String username;  // Nombre de usuario (@usuario)
     private String content;
     private String date;
     private static final int MAX_LENGTH = 140;
 
-    public Post(String username, String content, String date) {
+    public Post(String name, String username, String content, String date) {
+        this.name = name;
         this.username = username;
         this.content = content;
         this.date = date;
     }
 
     public Post() {
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getUsername() {
@@ -31,6 +37,10 @@ public class Post {
 
     public String getDate() {
         return date;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setUsername(String username) {
