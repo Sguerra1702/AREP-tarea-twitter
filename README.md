@@ -74,6 +74,10 @@ Si no puedes acceder al enlace de AWS, es probable que el servicio esté apagado
 
 [🎬 Video]
 
+https://github.com/user-attachments/assets/c9bf4cb5-0d4f-4bcf-a182-a75c880d258f
+
+
+
 ## 📁 Estructura del Proyecto
 ```
 └── twitter-Backend/
