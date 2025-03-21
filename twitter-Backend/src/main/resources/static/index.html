@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Twitter</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="sidebar">
+    <button class="profile-btn">Perfil</button>
+</div>
+
+<div class="feed">
+    <!-- Contenedor de nuevo post -->
+    <div class="new-post">
+        <textarea id="newPostContent" placeholder="¿Qué está pasando?" rows="3"></textarea>
+        <button id="postButton">Publicar</button>
+    </div>
+
+    <!-- Contenedor de tweets -->
+    <div id="tweet-container" class="tweet-container">
+        <p id="emptyMessage" class="empty-message hidden">
+            <strong>Vaya, esto está demasiado vacío:</strong><br>
+            Haz una publicación y aparecerá en el feed para que todos lo vean y puedan interactuar con él!
+        </p>
+    </div>
+</div>
+
+<div class="toBuild">
+    <p>En construcción</p>
+</div>
+
+<div id="overlay" class="overlay hidden">
+    <div class="overlay-content" id="overlay-content"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

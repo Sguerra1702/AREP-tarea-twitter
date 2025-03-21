@@ -42,9 +42,37 @@ body {
     border-right: 1px solid #38444D; /* Borde derecho */
 }
 
+.new-post {
+    padding: 30px;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #38444D;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post textarea {
+    width: 90%;
+    padding: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #192734;
+    color: white;
+    resize: none;
+}
+
+.new-post button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .tweet {
     background-color: #0a0a0a;
-    padding: 15px;
+    padding: 40px;
     border-bottom: 1px solid #38444D; /* Línea gris entre tweets */
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
@@ -89,6 +117,17 @@ body {
 
 .tweet .actions button:hover {
     color: #1DA1F2;
+}
+
+.empty-message {
+    text-align: center;
+    color: #8899A6;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Contenedor "En construcción" */
@@ -172,4 +211,55 @@ body {
     color: red;
     font-size: 14px;
     margin-top: 5px;
+}
+
+.register-container {
+    width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #1E2732;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Evita que se desborde */
+    background-color: #15202B;
+    color: white;
+}
+
+.register-container button {
+    width: 95%;
+    padding: 10px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container button:hover {
+    background-color: #0d8af0;
+}
+
+.register-container h2 {
+    color: white;
+}
+
+.register-container a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
 }

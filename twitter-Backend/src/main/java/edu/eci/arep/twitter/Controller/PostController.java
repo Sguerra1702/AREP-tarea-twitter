@@ -40,4 +40,10 @@ public class PostController {
         postsService.deletePost(id);
         return ResponseEntity.noContent().build();
     }
+
+    @DeleteMapping("/deleteAll")
+    public ResponseEntity<Void> deleteAllPosts() {
+        postsService.deleteAllPosts();
+        return ResponseEntity.noContent().build();
+    }
 }

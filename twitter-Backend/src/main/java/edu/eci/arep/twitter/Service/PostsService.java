@@ -28,4 +28,8 @@ public class PostsService {
     public Post getPostById(String id){
         return postRepository.findById(id).orElse(null);
     }
+
+    public void deleteAllPosts() {
+        postRepository.deleteAll();
+    }
 }
