@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #38444D; /* Línea gris separadora */
+}
+
+.profile-btn {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.feed {
+    flex: 1;
+    max-width: 650px;
+    margin-left: 0px;
+    padding: 0;
+    border-left: 1px solid #38444D;  /* Borde izquierdo */
+    border-right: 1px solid #38444D; /* Borde derecho */
+}
+
+.tweet {
+    background-color: #0a0a0a;
+    padding: 15px;
+    border-bottom: 1px solid #38444D; /* Línea gris entre tweets */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.tweet:hover {
+    background-color: #22303C;
+}
+
+.tweet .header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tweet .name {
+    font-weight: bold;
+    color: white;
+}
+
+.tweet .username {
+    color: #8899A6;
+}
+
+.tweet .content {
+    margin-top: 5px;
+}
+
+.tweet .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tweet .actions button {
+    background: none;
+    border: none;
+    color: #8899A6;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tweet .actions button:hover {
+    color: #1DA1F2;
+}
+
+/* Contenedor "En construcción" */
+.toBuild {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    background-color: #1E2732;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.toBuild p {
+    color: #8899A6;
+    font-weight: bold;
+}
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay-content {
+    background: #1E2732;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+}
+
+.login-container {
+    width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #1E2732;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Evita que se desborde */
+}
+
+.login-container button {
+    width: 95%;
+    padding: 10px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container h2 {
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
