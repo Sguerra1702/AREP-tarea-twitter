@@ -17,6 +17,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/auth/login").permitAll()
                         .requestMatchers("/posts").authenticated()
                         .anyRequest().permitAll()
                 )
